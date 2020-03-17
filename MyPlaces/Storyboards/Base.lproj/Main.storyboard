@@ -71,6 +71,7 @@
                                             <outlet property="locationLabel" destination="9Ae-QA-4Yv" id="JsM-k0-nRX"/>
                                             <outlet property="nameLabel" destination="zdN-hG-Mai" id="dV4-2R-OhJ"/>
                                             <outlet property="typeLabel" destination="WbQ-nx-dxe" id="aQ6-oB-rri"/>
+                                            <segue destination="y8O-hc-Ojz" kind="show" identifier="showDetail" id="wyz-8D-dbN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -109,7 +110,7 @@
             <objects>
                 <tableViewController id="y8O-hc-Ojz" customClass="NewPlaceViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BKM-t9-joP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
@@ -252,7 +253,7 @@
                     <navigationItem key="navigationItem" title="New Place" id="hRl-xK-JfS">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xTN-Wu-vdv">
                             <connections>
-                                <action selector="cancelActionWith_sender:" destination="y8O-hc-Ojz" id="ACl-V0-Y8W"/>
+                                <action selector="cancelAction:" destination="y8O-hc-Ojz" id="DWz-KE-Ml2"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="G9B-YL-wKn">
@@ -311,10 +312,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDP-ns-pAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818.840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1819" y="-201"/>
         </scene>
     </scenes>
     <resources>
         <image name="Photo" width="194.66667175292969" height="195.66667175292969"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wyz-8D-dbN"/>
+    </inferredMetricsTieBreakers>
 </document>
