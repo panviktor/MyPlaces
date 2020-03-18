@@ -157,7 +157,7 @@
             <objects>
                 <tableViewController id="y8O-hc-Ojz" customClass="NewPlaceViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BKM-t9-joP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
@@ -359,7 +359,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RM-lr-hz7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="esJ-Wt-dNh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2314" y="139"/>
+            <point key="canvasLocation" x="2155" y="152"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="8Ul-Yj-ddI">
@@ -402,7 +402,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9g-Pm-09j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3245" y="139"/>
+            <point key="canvasLocation" x="3070" y="151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6sH-uc-cxx">
@@ -441,7 +441,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDP-ns-pAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2313" y="-652"/>
+            <point key="canvasLocation" x="2154" y="-615"/>
         </scene>
     </scenes>
     <resources>
@@ -453,6 +453,6 @@
         <image name="map" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wyz-8D-dbN"/>
+        <segue reference="Psy-TT-O64"/>
     </inferredMetricsTieBreakers>
 </document>
