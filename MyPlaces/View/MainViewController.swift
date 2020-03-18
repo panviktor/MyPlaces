@@ -12,8 +12,13 @@ import RealmSwift
 class MainViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var segmentedControl: UISegmentedControl!
+    @IBOutlet var reversedSortingButton: UIBarButtonItem!
+    
+    
     //MARK: - Properties
     var places: Results<Place>!
+    var ascendingSorting = true
     
     //MARK: - ViewController Methods
     override func viewDidLoad() {
@@ -23,17 +28,37 @@ class MainViewController: UIViewController {
     
     //MARK: - Custom Methods
     
-    //MARK: -IBActions
-    @IBAction func unwindSegue( _ segue: UIStoryboardSegue) {
+    //MARK: - IBActions
+    @IBAction func sortSelection(_ sender: UISegmentedControl) {
+        sorting()
+    }
+    
+    @IBAction func reversedSorting(_ sender: UIBarButtonItem) {
+        ascendingSorting.toggle()
         
-        guard let newPlaceVC = segue.source as? NewPlaceViewController else { return }
-        newPlaceVC.saveNewPlace()
+        if ascendingSorting {
+            reversedSortingButton.image = #imageLiteral(resourceName: "AZ")
+        } else {
+            reversedSortingButton.image = #imageLiteral(resourceName: "ZA")
+        }
+        
+        sorting()
+    }
+    
+    //MARK: - Custom Methods
+    private func sorting() {
+        if segmentedControl.selectedSegmentIndex == 0 {
+            places = places.sorted(byKeyPath: "date", ascending: ascendingSorting)
+        } else  {
+            places = places.sorted(byKeyPath: "name", ascending: ascendingSorting)
+        }
         tableView.reloadData()
     }
 }
 
 //MARK: - TableView DataSourse
 extension MainViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return places.isEmpty ? 0 : places.count
     }
@@ -57,6 +82,7 @@ extension MainViewController: UITableViewDataSource {
 
 //MARK: - TableVew Delegate
 extension MainViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let place = places[indexPath.row]
@@ -70,7 +96,21 @@ extension MainViewController: UITableViewDelegate {
     }
 }
 
-//MARK: - 
+//MARK: - Navigation
 extension MainViewController {
+    @IBAction func unwindSegue( _ segue: UIStoryboardSegue) {
+        
+        guard let newPlaceVC = segue.source as? NewPlaceViewController else { return }
+        newPlaceVC.savePlace()
+        tableView.reloadData()
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let place = places[indexPath.row]
+            let newPlaceVC = segue.destination as! NewPlaceViewController
+            newPlaceVC.currentPlace = place
+        }
+    }
 }
