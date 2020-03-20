@@ -150,14 +150,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028.985507246377" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1119" y="139"/>
         </scene>
         <!--New Place-->
         <scene sceneID="w8w-SS-F9y">
             <objects>
                 <tableViewController id="y8O-hc-Ojz" customClass="NewPlaceViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BKM-t9-joP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
@@ -394,7 +394,7 @@
                                 </constraints>
                                 <state key="normal" image="camcel"/>
                                 <connections>
-                                    <action selector="closeVC" destination="2gf-0n-JmC" eventType="touchUpInside" id="FBW-7k-mx6"/>
+                                    <action selector="closeVC" destination="2gf-0n-JmC" eventType="touchUpInside" id="Wyg-5Y-KZ7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkO-k3-9Hw">
@@ -405,7 +405,7 @@
                                 </constraints>
                                 <state key="normal" image="Location"/>
                                 <connections>
-                                    <action selector="centerViewInUserLocation" destination="2gf-0n-JmC" eventType="touchUpInside" id="xy0-gx-LcM"/>
+                                    <action selector="centerViewInUserLocation" destination="2gf-0n-JmC" eventType="touchUpInside" id="fPA-8n-IuJ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="ihC-jE-KPc">
@@ -428,7 +428,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneButtonPressed" destination="2gf-0n-JmC" eventType="touchUpInside" id="Haw-Aq-Aj4"/>
+                                    <action selector="doneButtonPressed" destination="2gf-0n-JmC" eventType="touchUpInside" id="ZVN-Oi-zKi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gz-0K-gKy">
@@ -439,7 +439,7 @@
                                 </constraints>
                                 <state key="normal" image="GetDirection"/>
                                 <connections>
-                                    <action selector="goButtonPressed" destination="2gf-0n-JmC" eventType="touchUpInside" id="Eal-vI-LlH"/>
+                                    <action selector="goButtonPressed" destination="2gf-0n-JmC" eventType="touchUpInside" id="8Da-LC-Uru"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -466,13 +466,13 @@
                         <viewLayoutGuide key="safeArea" id="wEN-vW-wiU"/>
                     </view>
                     <connections>
-                        <outlet property="addressLabel" destination="ulJ-oC-bVB" id="PiP-ei-a3d"/>
-                        <outlet property="centerViewInUserLocationButton" destination="wkO-k3-9Hw" id="dlr-k9-xH1"/>
-                        <outlet property="closeButton" destination="dZM-sQ-c9v" id="xiR-rS-Nc4"/>
-                        <outlet property="doneButton" destination="kxc-3E-d3u" id="w4G-Ij-P1B"/>
-                        <outlet property="goButton" destination="3Gz-0K-gKy" id="pqP-1J-4zg"/>
-                        <outlet property="mapPinImage" destination="ihC-jE-KPc" id="Yn9-Jb-GTZ"/>
-                        <outlet property="mapView" destination="6ml-q8-D2i" id="NfL-kl-nin"/>
+                        <outlet property="addressLabel" destination="ulJ-oC-bVB" id="n1K-7x-BD0"/>
+                        <outlet property="centerButton" destination="wkO-k3-9Hw" id="Bed-VN-LIb"/>
+                        <outlet property="closeButton" destination="dZM-sQ-c9v" id="qaU-sb-WHJ"/>
+                        <outlet property="doneButton" destination="kxc-3E-d3u" id="3qH-jS-WOh"/>
+                        <outlet property="goButton" destination="3Gz-0K-gKy" id="BQf-BE-duI"/>
+                        <outlet property="mapPinImage" destination="ihC-jE-KPc" id="8Bm-pG-LEA"/>
+                        <outlet property="mapView" destination="6ml-q8-D2i" id="hdu-Yj-3vJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9g-Pm-09j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -533,6 +533,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4TI-dm-DG5"/>
-        <segue reference="Psy-TT-O64"/>
+        <segue reference="wyz-8D-dbN"/>
     </inferredMetricsTieBreakers>
 </document>
