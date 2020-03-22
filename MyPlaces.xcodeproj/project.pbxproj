@@ -79,14 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		770C8C6F2427AAB30062BC83 /* Scrennshots */ = {
+		770C8C6F2427AAB30062BC83 /* Screnshots */ = {
 			isa = PBXGroup;
 			children = (
 				770C8C6B2427AAA80062BC83 /* Simulator Screen Shot - iPhone 11 Pro Max - 2020-03-22 at 17.12.27.png */,
 				770C8C6A2427AAA80062BC83 /* Simulator Screen Shot - iPhone 11 Pro Max - 2020-03-22 at 17.13.50.png */,
 				770C8C692427AAA80062BC83 /* Simulator Screen Shot - iPhone 11 Pro Max - 2020-03-22 at 17.14.01.png */,
 			);
-			path = Scrennshots;
+			path = Screnshots;
 			sourceTree = "<group>";
 		};
 		77D671E2241BF65A006F9A7F = {
@@ -142,7 +142,7 @@
 		77D67204241BF735006F9A7F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				770C8C6F2427AAB30062BC83 /* Scrennshots */,
+				770C8C6F2427AAB30062BC83 /* Screnshots */,
 				77D671F7241BF660006F9A7F /* Assets.xcassets */,
 			);
 			path = Resources;
