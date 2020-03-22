@@ -18,9 +18,10 @@
 		77D6720B241FFC07006F9A7F /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6720A241FFC07006F9A7F /* NewPlaceViewController.swift */; };
 		77D67217242125A1006F9A7F /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D67216242125A1006F9A7F /* StorageManager.swift */; };
 		77DDC3B12424DFA100EC4CA6 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DDC3B02424DFA100EC4CA6 /* MapManager.swift */; };
+		77DDC3B82425086100EC4CA6 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCCB885762D8962F3C282EF /* Pods_MyPlaces.framework */; };
+		77DDC3B92425086100EC4CA6 /* Pods_MyPlaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCCB885762D8962F3C282EF /* Pods_MyPlaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77EE4E6724224D9F0025B408 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE4E6624224D9F0025B408 /* RatingControl.swift */; };
 		77EE4E69242294BA0025B408 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE4E68242294BA0025B408 /* MapViewController.swift */; };
-		F94DD853A6EE6AA997E77D9A /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCCB885762D8962F3C282EF /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				77DDC3B92425086100EC4CA6 /* Pods_MyPlaces.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +53,8 @@
 		77D6720A241FFC07006F9A7F /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		77D67216242125A1006F9A7F /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		77DDC3B02424DFA100EC4CA6 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		77DDC3B3242503C900EC4CA6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		77DDC3B4242503CA00EC4CA6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		77EE4E6624224D9F0025B408 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		77EE4E68242294BA0025B408 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1896D4F7663A0863343A4E9 /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94DD853A6EE6AA997E77D9A /* Pods_MyPlaces.framework in Frameworks */,
+				77DDC3B82425086100EC4CA6 /* Pods_MyPlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +222,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 77D671E2241BF65A006F9A7F;
 			productRefGroup = 77D671EC241BF65A006F9A7F /* Products */;
@@ -309,6 +314,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77D671F5241BF65A006F9A7F /* Base */,
+				77DDC3B3242503C900EC4CA6 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77D671FA241BF660006F9A7F /* Base */,
+				77DDC3B4242503CA00EC4CA6 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -328,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -389,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

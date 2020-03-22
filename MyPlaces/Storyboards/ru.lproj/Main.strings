@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "9Ae-QA-4Yv"; */
+"9Ae-QA-4Yv.text" = "Локации";
+
+/* Class = "UITextField"; placeholder = "Place type"; ObjectID = "9jx-al-7Fr"; */
+"9jx-al-7Fr.placeholder" = "Тип заведений";
+
+/* Class = "UINavigationItem"; title = "My Places"; ObjectID = "LUh-g4-BM4"; */
+"LUh-g4-BM4.title" = "Мои заведения";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "WUf-fb-Eod"; */
+"WUf-fb-Eod.text" = "Тип";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "WbQ-nx-dxe"; */
+"WbQ-nx-dxe.text" = "Тип";
+
+/* Class = "UITextField"; placeholder = "Place name"; ObjectID = "XSl-fk-OQM"; */
+"XSl-fk-OQM.placeholder" = "Имя заведения";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "aec-ua-QMG"; */
+"aec-ua-QMG.text" = "Локация";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "d9g-z8-k33"; */
+"d9g-z8-k33.text" = "Имя";
+
+/* Class = "UISegmentedControl"; eMU-L7-LZT.segmentTitles[0] = "Date"; ObjectID = "eMU-L7-LZT"; */
+"eMU-L7-LZT.segmentTitles[0]" = "Дата";
+
+/* Class = "UISegmentedControl"; eMU-L7-LZT.segmentTitles[1] = "Name"; ObjectID = "eMU-L7-LZT"; */
+"eMU-L7-LZT.segmentTitles[1]" = "Имя";
+
+/* Class = "UINavigationItem"; title = "New Place"; ObjectID = "hRl-xK-JfS"; */
+"hRl-xK-JfS.title" = "Новое место";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "kxc-3E-d3u"; */
+"kxc-3E-d3u.normalTitle" = "Готово";
+
+/* Class = "UILabel"; text = "Current Adress"; ObjectID = "ulJ-oC-bVB"; */
+"ulJ-oC-bVB.text" = "Текущий адрес";
+
+/* Class = "UITextField"; placeholder = "Place location"; ObjectID = "wka-Yu-FVm"; */
+"wka-Yu-FVm.placeholder" = "Место заведения";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "zdN-hG-Mai"; */
+"zdN-hG-Mai.text" = "Имя";
